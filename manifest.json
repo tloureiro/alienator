@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    
+    "name": "Alienator",
+    "description": "Hides Facebook trending pagelet",
+    "version": "1.0",
+
+    "content_scripts": [
+        {
+            "run_at": "document_idle",
+            "matches": ["https://www.facebook.com/*"],
+            "js": ["alienator.js"]
+        }
+    ],
+    "icons": { "16": "alienator_logo-16.png", "128": "alienator_logo-128.png" }
+}
